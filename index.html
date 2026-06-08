@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Adriano Monteiro | Portfólio Backend</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Botão de tema claro/escuro -->
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-btn">
+            <i class="fas fa-moon"></i> Tema Escuro
+        </button>
+    </div>
+
+    <!-- Menu de navegação fixo -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#sobre">Adriano Monteiro de Sousa</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==================== SEÇÃO SOBRE MIM ==================== -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="imagens/perfil/foto_perfi.jpg" alt="Adriano Monteiro - Desenvolvedor Backend">
+                    </div>
+                    <div class="about-text">
+                        <h3>Olá, eu sou <span class="highlight">Adriano Monteiro De Sousa</span></h3>
+                        <p><strong>🎯 Desenvolvedor Backend | Foco em Segurança de Aplicações</strong></p>
+                        
+                        <p>Sou um desenvolvedor backend apaixonado por construir APIs seguras, robustas e bem estruturadas. Atualmente curso <strong>Análise e Desenvolvimento de Sistemas na UNINTER</strong>.</p>
+                        
+                        <h4>⚡ O que me motiva?</h4>
+                        <p>Acredito que segurança não pode ser um "plus" — é parte essencial do desenvolvimento. Por isso, aplico boas práticas como <strong>hashing bcrypt, JWT, rate limiting e proteção contra CSRF/XSS</strong> em todos os meus projetos.</p>
+                        
+                        <h4>🚀 Destaques da minha trajetória:</h4>
+                        <ul>
+                            <li>✅ Desenvolvi um e-commerce real para a <strong>Romanel Joias</strong> com integração ao Mercado Pago</li>
+                            <li>✅ Migrei hashing de SHA256 para bcrypt (12 rounds) aumentando a segurança do sistema</li>
+                            <li>✅ Construí uma API REST modular com autenticação JWT e logs de auditoria</li>
+                            <li>✅ Configurei headers HSTS e resolvi conflitos de CSP com gateway de pagamento</li>
+                        </ul>
+                        
+                        <h4>📚 Hobbies e interesses:</h4>
+                        <p>Fora do código, estudo constantemente sobre <strong>cibersegurança</strong> (atualmente fazendo cursos da Cisco), curto resolver desafios no <strong>CTF (Capture The Flag)</strong>, e sou fã de jogos de RPG. Também gosto de acompanhar lançamentos de tecnologia e contribuir para projetos open-source quando possível.</p>
+                        
+                        <h4>🎯 Objetivo profissional:</h4>
+                        <p>Trabalhar em desenvolvimento backend onde possa aplicar meus conhecimentos em <strong>Python, Flask, API REST e segurança de aplicações</strong>, enquanto continuo evoluindo tecnicamente e entregando valor para a empresa.</p>
+                        
+                        <div class="tech-badges">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>API REST</span>
+                            <span>MySQL</span>
+                            <span>JWT</span>
+                            <span>Bcrypt</span>
+                            <span>Linux</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO FORMAÇÃO ==================== -->
+        <section id="formacao" class="section">
+            <div class="container">
+                <h2 class="section-title">Formação</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p>UNINTER | 07/2025 – 02/2028 (cursando)</p>
+                        <p class="education-detail">MySQL | Python | POO | Fundamentos de Software | Legislação e Ética</p>
+                    </div>
+                    <div class="education-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Cursos Complementares</h3>
+                        <ul class="course-list">
+                            <li>✔ Introdução à Cibersegurança – Cisco (2026)</li>
+                            <li>✔ Fundamentos de Python 1 – Cisco (2026)</li>
+                            <li>✔ Linux Essentials – Cisco (2026)</li>
+                            <li>✔ Linux Unhatched – Cisco (2026)</li>
+                            <li>🔄 Python 2 / Linux 1/2 / Analista de Cibersegurança Júnior / Hacker Ético / Técnico em redes – Cisco (Em andamento)</li>
+                        </ul>
+                    </div>
+                    <div class="education-card">
+                        <i class="fas fa-language"></i>
+                        <h3>Idiomas</h3>
+                        <p>Português (nativo)</p>
+                        <p>Inglês (técnico - leitura de documentações)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO PORTFÓLIO ==================== -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Portfólio</h2>
+                <div class="portfolio-grid">
+                    
+                    <!-- PROJETO 1 - E-COMMERCE ROMANEL JOIAS -->
+                    <div class="portfolio-card">
+                        <div class="carousel-container" data-carousel="romanel">
+                            <button class="carousel-btn prev" data-carousel-btn="prev">❮</button>
+                            <button class="carousel-btn next" data-carousel-btn="next">❯</button>
+                            <div class="carousel-slides" data-carousel-slides>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/01-loja-inicio.png">
+                                    <img src="imagens/perfil/Joias Romanel/01-loja-inicio.png" alt="Romanel - Loja início">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/02-produtos.png">
+                                    <img src="imagens/perfil/Joias Romanel/02-produtos.png" alt="Romanel - Página de produtos">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/03-login.png">
+                                    <img src="imagens/perfil/Joias Romanel/03-login.png" alt="Romanel - Login">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/04-dashboard-admin.png">
+                                    <img src="imagens/perfil/Joias Romanel/04-dashboard-admin.png" alt="Romanel - Dashboard Admin">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/05-produtos-admin.png">
+                                    <img src="imagens/perfil/Joias Romanel/05-produtos-admin.png" alt="Romanel - Gerenciar produtos">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/06-novo-produto.png">
+                                    <img src="imagens/perfil/Joias Romanel/06-novo-produto.png" alt="Romanel - Cadastro de produto">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/07-pedidos-admin.png">
+                                    <img src="imagens/perfil/Joias Romanel/07-pedidos-admin.png" alt="Romanel - Gerenciar pedidos">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/08-carrinho.png">
+                                    <img src="imagens/perfil/Joias Romanel/08-carrinho.png" alt="Romanel - Carrinho de compras">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/09-checkout.png">
+                                    <img src="imagens/perfil/Joias Romanel/09-checkout.png" alt="Romanel - Checkout">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/10-pagamento-mercadopago.png">
+                                    <img src="imagens/perfil/Joias Romanel/10-pagamento-mercadopago.png" alt="Romanel - Pagamento Mercado Pago">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/11-pagamento-recusado.png">
+                                    <img src="imagens/perfil/Joias Romanel/11-pagamento-recusado.png" alt="Romanel - Pagamento recusado">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/12-pagamento-pendente.png">
+                                    <img src="imagens/perfil/Joias Romanel/12-pagamento-pendente.png" alt="Romanel - Pagamento pendente">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Joias Romanel/13-pagamento-aprovado.png">
+                                    <img src="imagens/perfil/Joias Romanel/13-pagamento-aprovado.png" alt="Romanel - Pagamento aprovado">
+                                </div>
+                            </div>
+                            <div class="carousel-dots" data-carousel-dots></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>E-commerce Romanel Joias</h3>
+                            <p>Python | Flask | SQLite | API Mercado Pago | Bcrypt | CSRF</p>
+                            <p>E-commerce real em produção com integração de pagamentos e proteções de segurança.</p>
+                            <a href="https://github.com/adrianosouz1236-prog/portifollio.git" class="btn-link" target="_blank">Ver no GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- PROJETO 2 - PLATAFORMA DOA+ -->
+                    <div class="portfolio-card">
+                        <div class="carousel-container" data-carousel="doa">
+                            <button class="carousel-btn prev" data-carousel-btn="prev">❮</button>
+                            <button class="carousel-btn next" data-carousel-btn="next">❯</button>
+                            <div class="carousel-slides" data-carousel-slides>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-47-49.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-47-49.png" alt="Doa+ - Página inicial">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-47-58.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-47-58.png" alt="Doa+ - Necessidades">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-49-54.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-49-54.png" alt="Doa+ - Escolha de cadastro">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-01.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-01.png" alt="Doa+ - Cadastro ONG">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-08.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-08.png" alt="Doa+ - Cadastro Doador">
+                                </div>
+                                <div class="carousel-slide" data-lightbox-img="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-20.png">
+                                    <img src="imagens/perfil/Doa+/Captura de tela de 2026-06-03 09-50-20.png" alt="Doa+ - Login">
+                                </div>
+                            </div>
+                            <div class="carousel-dots" data-carousel-dots></div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Plataforma Doa+ (Em Desenvolvimento)</h3>
+                            <p>Python | Flask | MySQL | JWT | Flask-Limiter | Logs de Auditoria</p>
+                            <p>API REST modular com autenticação JWT, middlewares de autorização e rate limiting.</p>
+                            <a href="https://github.com/adrianosouz1236-prog/Doa-.git" class="btn-link" target="_blank">Ver no GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO CONTATO ==================== -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Vamos conversar?</h3>
+                        <p><i class="fas fa-envelope"></i> adrianosouz1236@gmail.com</p>
+                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/adriano-monteiro-de-sousa</p>
+                        <p><i class="fab fa-github"></i> github.com/adrianosouz1236-prog</p>
+                        <p><i class="fas fa-phone"></i> (91) 98016-8991 / (91) 98629-7537</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ananindeua - PA</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Adriano Monteiro | Desenvolvedor Backend</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">❮</button>
+        <button class="lightbox-next">❯</button>
+        <img id="lightbox-img" src="" alt="Imagem ampliada">
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
