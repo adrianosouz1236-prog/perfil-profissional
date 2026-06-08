@@ -310,8 +310,7 @@ function checkMissingImages() {
     images.forEach(img => {
         img.addEventListener('error', function() {
             console.warn(`Imagem não encontrada: ${this.src}`);
-            // Opcional: colocar uma imagem padrão
-            // this.src = 'assets/default-image.jpg';
+            
         });
     });
 }
@@ -339,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustScrollOnLoad();
 });
 
-// Recarregar carrosséis quando a janela for redimensionada (útil para responsividade)
+// Recarregar carrosséis quando a janela for redimensionada 
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
